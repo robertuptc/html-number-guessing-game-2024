@@ -4,15 +4,39 @@
     <title>TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <script src="./app.js" async defer></script>
   </head>
+  
   <body>
-    <!-- your HTML should go here -->
+
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
+    <div class="main-container">
+      <div class="container">
+        <!-- <div id="container" class="form-container"> -->
+          <form action="submit">
+              <label for="Number">Enter a number from 1-100</label>
+              <input type="number" id="input-number" name="name" placeholder="Type number">
+              <label for="submit-bttn">Check your LUCK!</label>
+              <input type="submit" value="submit"></button>
+            </form>
+        <!-- </div> -->
+      </div>
+  
+      <div class="container">
+        <p></p>
+      </div>
+  
+      <div class="container" id="numbers-history">
+        <h3>Numbers History</h3>
+        <ul id="guessed-numbers">
+        </ul>
+      </div>
+
+    </div>
 
 
   </body>
